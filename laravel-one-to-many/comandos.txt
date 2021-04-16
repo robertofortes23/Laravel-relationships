@@ -1,0 +1,16 @@
+preencher .env
+php artisan make:model Categoria -m
+php artisan make:model Produto -m
+php artisan migrate:fresh
+php artisan make:seeder CategoriasSeeder
+php artisan make:seeder ProdutosSeeder
+php artisan db:seed
+editar routes
+    - listar categorias
+    - listar produtos e suas categorias (belongsTo)
+    - listar categorias e seus produtos (hasMany)
+    - listar categorias / json com o with("produtos") e mostrar no console do chrome
+
+    - inserir produto através de uma categoria
+    - inserir produtos e ASSOCIAR com uma categoria
+    - Desassociar um produto de uma categoria
